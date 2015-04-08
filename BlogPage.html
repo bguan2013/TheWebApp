@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="BlogPageStyleSheet.css">
+		<title>Blog Page</title>
+
+		<!--<script type="text/javascript">
+			function showOptions(){
+				document.getElementById("options").visibility = "visible";
+				document.getElementById("options").opacity = 1;
+				document.getElementById("options").height= "70px";
+				document.getElementById("options").zIndex: 1000;
+			}
+		</script>-->
+	</head>
+	<body>
+		<img id = "header_background" src = "waterDrop.jpg">
+		<div class = "header">
+			
+			<a href="WriteBlogPage.jsp" id = "write_button"></a>
+			<a href="RSSNewsPage.jsp" id = "rss_button"></a>
+			<div>username</div>
+			<nav>
+				<ul>
+				<li>
+					<a id = "icon" href=""></a>
+					<ul id = "options">
+						<li>
+							<a href="Setting"> Setting </a>
+						</li>
+						
+						<li>
+							<a href="Logout"> Logout </a>
+						</li>
+					</ul>
+				</li>
+				
+				</ul>
+			</nav>
+			
+			
+		</div>
+		<div class = "post">
+			<ul id = "post-list">
+				<li id = "first-post">
+					No post1!
+				</li>
+
+				<li>
+					<p>No post2!</p>
+					
+					<form>
+						<input type = "text" style = "width:100%">
+						<input type = "button" value = "comment">
+					</form>
+				</li>
+				<li>
+					No post3!
+				</li>
+				<li>
+					No post4!
+				</li>
+				<li>
+					No post5!
+				</li>
+			</ul>
+			
+		</div>
+
+	</body>
+
+</html>

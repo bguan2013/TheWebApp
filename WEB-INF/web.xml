@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<web-app
+
+        version="3.0"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+        id = "simple-blog">
+ 
+
+ 	<display-name>simple-blog</display-name>
+ 	<welcome-file-list>
+ 		<welcome-file>index.html</welcome-file>
+        <welcome-file>SimpleBlogWelcomePage.html</welcome-file>
+ 	</welcome-file-list>
+    <session-config>
+        <session-timeout>20</session-timeout>
+    </session-config>
+
+
+    <servlet>
+    	<servlet-name>Login</servlet-name>
+   		<servlet-class>Login</servlet-class>
+   	</servlet>
+    <servlet>
+      <servlet-name>ViewBlog</servlet-name>
+      <servlet-class>ViewBlog</servlet-class>
+    </servlet>
+    <servlet>
+      <servlet-name>Register</servlet-name>
+      <servlet-class>Register</servlet-class>
+    </servlet>
+    <servlet>
+      <servlet-name>Logout</servlet-name>
+      <servlet-class>Logout</servlet-class>
+    </servlet>
+
+    <servlet>
+      <servlet-name>WriteBlog</servlet-name>
+      <servlet-class>WriteBlog</servlet-class>
+    </servlet>
+
+    <servlet>
+      <servlet-name>SaveBlog</servlet-name>
+      <servlet-class>SaveBlog</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>JSONBlog</servlet-name>
+        <servlet-class>JSONBlog</servlet-class>
+    </servlet>
+
+    <!--
+   	<servlet-mapping>
+   		<servlet-name>Login</servlet-name>
+   		<url-pattern>/Login</url-pattern>
+   	</servlet-mapping>
+    <servlet-mapping>
+      <servlet-name>ViewBlog</servlet-name>
+      <url-pattern>/ViewBlog</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+      <servlet-name>Register</servlet-name>
+      <url-pattern>/Register</url-pattern>
+    </servlet-mapping><servlet-mapping>
+      <servlet-name>Logout</servlet-name>
+      <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    -->
+    
+</web-app>
